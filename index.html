@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MahaLakshmi Jewellers Mysuru</title>
+
+  <style>
+    :root {
+      --gold: #c9a24d;
+      --gold-dark: #b18b2e;
+      --white: #ffffff;
+      --bg: #faf9f6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 30px 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border: 1px solid rgba(201,162,77,0.25);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(201,162,77,0.25);
+    }
+
+    .store-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      color: white;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    footer a {
+      color: var(--gold-dark);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>MahaLakshmi Jewellers Mysuru</h1>
+    <p class="subtitle">
+      Download our official app for latest jewellery collections & updates
+    </p>
+
+    <div class="cards">
+      <!-- App Store Card -->
+      <div class="card">
+        <div class="store-icon"></div>
+        <h2>App Store</h2>
+        <p>
+          Download the official iOS app from Apple App Store.
+        </p>
+        <a 
+          href="https://apps.apple.com/in/app/mahalakshmi-jewellers-mysore/id6756428444" 
+          target="_blank" 
+          class="btn"
+        >
+          Download on App Store
+        </a>
+      </div>
+
+      <!-- Play Store Card -->
+      <div class="card">
+        <div class="store-icon">▶</div>
+        <h2>Play Store</h2>
+        <p>
+          Download the official Android app from Google Play Store.
+        </p>
+        <a 
+          href="https://play.google.com/store/apps/details?id=com.mahalakshmiapp.mahalakshmijewellers" 
+          target="_blank" 
+          class="btn"
+        >
+          Get it on Play Store
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      Built by 
+      <a 
+        href="https://wa.me/918176989558" 
+        target="_blank"
+      >
+        Shreyansh Webcraft
+      </a>
+    </footer>
+  </div>
+
+</body>
+</html>
